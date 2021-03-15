@@ -221,3 +221,40 @@ section.your-active-class .landing__container::after {
 		           rotate(-360deg);
 	}
 }
+
+
+/* Added Styles */
+/* Active link style*/
+
+.navbar__menu .menu__link.active {
+    background: #76c377;
+    color: #fff ;
+    transition: ease 0.3s all;
+}
+
+/* To Top btn style*/
+#toTop__btn {
+    /*display: none;*/
+    position: fixed;
+    bottom: 20px;
+    right: 35px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #76c377;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 16px;
+	font-weight: bold;
+	opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+#toTop__btn:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+

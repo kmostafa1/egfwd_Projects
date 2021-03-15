@@ -1,13 +1,48 @@
 # Landing Page Project
 
-## Table of Contents
+## Introduction
 
-* [Instructions](#instructions)
+This code is meant to satisfy the first project of the Front End Web Development Professional Track.
+
+This project requires you to build a multi-section landing page, with a dynamically updating navigational menu based on the amount of content that is added to the page.
+
+## Requirements
+convert The starter project from a static project to an interactive one.
+
+## Technologies
+* HTML
+* CSS
+* JavaScript 
+
+
+## The Starter Code
+
+You can download the starter code https://github.com/udacity/fend/tree/refresh-2019 by cloning the specific branch 'refresh-2019'.
+
+
+## Usability
+All features are usable across modern desktop, tablet, and phone browsers.
 
 ## Instructions
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+* User can dynamically add the content to the page.
+* Navigation is built dynamically as an unordered list.
+* It should be clear which section is being viewed while scrolling through the page. 
+* When clicking an item from the navigation menu, the link should scroll to the appropriate section. rather than giving you the default jump.
 
-To get started, open `js/app.js` and start building out the app's functionality
+## Suggested:
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+Add an active state to your navigation items when a section is in the viewport.
+Hide fixed navigation bar while not scrolling (it should still be present on page load).
+    Hint: setTimeout can be used to check when the user is no longer scrolling.
+Add a scroll to top button on the page that’s only visible when the user scrolls below the fold of the page.
+Update/change the design/content.
+Make sections collapsible.
+
+
+
+ 
+
+
+
+
