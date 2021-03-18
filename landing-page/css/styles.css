@@ -63,7 +63,7 @@ section {
 
 /* ---- Module Rules ---- */
 
-/* Navigation Styles*/
+
 .navbar__menu ul {
     padding-left: 0;
     margin: 0;
@@ -75,7 +75,8 @@ section {
 }
 
 .navbar__menu .menu__link {
-    display: block;
+    /*float: left;*/
+	display: inline-block;
     padding: 1em;
     font-weight: bold;
     text-decoration: none;
@@ -90,7 +91,7 @@ section {
 
 /* Header Styles */
 .page__header {
-    background: #fff;
+	background: #fff;
     position: fixed;
     top: 0;
     width: 100%;
@@ -193,17 +194,17 @@ section:nth-of-type(3n + 1) .landing__container::after {
 /* ---- Theme State Rules ---- */
 /* Section Active Styles */
 /* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
-section.your-active-class {
+section.active {
     background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+    /*background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);*/
 }
 
-section.your-active-class .landing__container::before {
+section.active .landing__container::before {
     opacity: 1;
     animation: rotate 4s linear 0s infinite forwards;
 }
 
-section.your-active-class .landing__container::after {
+section.active .landing__container::after {
     opacity: 1;
     animation: rotate 5s linear 0s infinite forwards reverse;
 }
@@ -223,18 +224,86 @@ section.your-active-class .landing__container::after {
 }
 
 
-/* Added Styles */
+/* New Added Styles */
 /* Active link style*/
 
-.navbar__menu .menu__link.active {
+.menu__link.active {
     background: #76c377;
     color: #fff ;
     transition: ease 0.3s all;
 }
 
+/* Hide the button that should open and close the navbar__menu on small screens */
+.icon {
+    display: none;
+    color: #a68d1f;
+    background-color: transparent;
+    transition: 0.8s;
+}
+
+
+
+
+
+
+/* The "responsive" class is added to the navbar__menu with JavaScript when the user clicks on the icon. This class makes the navbar__menu look good on small screens (display the links vertically instead of horizontally) */
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+
+    .page__header {
+        padding: 15px 0px;
+    }
+
+
+	nav ul {
+			position: fixed;
+			top: 30px;
+			right: 0px;
+			background: #fff;
+			visibility: hidden;
+			opacity: 0;
+		}
+		
+	
+    .navbar__menu .menu__link {
+        display: block;
+		text-align: right;
+        line-height: 2em;
+		font-size: 14px;
+		transition: 0.8s;
+		color: #000;
+    }
+	
+
+    .icon {
+        display: block;
+		float: right;
+		position: fixed;
+        top: 0px;
+        right: 0px;
+        margin-right: 20px;
+    }
+	
+	.show {
+	visibility: visible;
+	opacity: 0.8;
+	}
+
+	.hide {
+			visibility: hidden;
+			opacity: 0;
+	}
+
+}
+
+
+
+
+
 /* To Top btn style*/
 #toTop__btn {
-    /*display: none;*/
+    display: none;
     position: fixed;
     bottom: 20px;
     right: 35px;

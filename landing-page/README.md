@@ -4,7 +4,7 @@
 
 This code is meant to satisfy the first project of the Front End Web Development Professional Track.
 
-This project requires you to build a multi-section landing page, with a dynamically updating navigational menu based on the amount of content that is added to the page.
+This project requires to build a multi-section landing page, with a dynamically updating navigational menu based on the amount of content that is added to the page.
 
 ## Requirements
 convert The starter project from a static project to an interactive one.
@@ -29,15 +29,9 @@ All features are usable across modern desktop, tablet, and phone browsers.
 * Navigation is built dynamically as an unordered list.
 * It should be clear which section is being viewed while scrolling through the page. 
 * When clicking an item from the navigation menu, the link should scroll to the appropriate section. rather than giving you the default jump.
+* Add an active state to your navigation items when a section is in the viewport.
+* Add a scroll to top button on the page that’s only visible when the user scrolls below the fold of the page.
 
-## Suggested:
-
-Add an active state to your navigation items when a section is in the viewport.
-Hide fixed navigation bar while not scrolling (it should still be present on page load).
-    Hint: setTimeout can be used to check when the user is no longer scrolling.
-Add a scroll to top button on the page that’s only visible when the user scrolls below the fold of the page.
-Update/change the design/content.
-Make sections collapsible.
 
 
 
