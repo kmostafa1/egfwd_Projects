@@ -51,12 +51,11 @@ app.post('/add', (request, response) => {
         userResponse:request.body.userResponse,
         zoneName:request.body.zoneName
     };
-    // console.log(projectData);
-    
-    // response.send(projectData).status(404).end();
-    response.send({
+       
+     response.send({
         status:200,
         message: "added successfully"
     });
+    
 });
 

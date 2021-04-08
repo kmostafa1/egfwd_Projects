@@ -22,7 +22,7 @@ try{
         userResponse: userResponse,
         zoneName: weatherData.name,
     });
-
+        
     if(postResponse.status===200){
         updateUI("/all");
     }

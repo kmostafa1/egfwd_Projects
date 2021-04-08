@@ -4,8 +4,8 @@
   "description": "## Overview This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI.",
   "main": "server.js",
   "scripts": {
-     "start": "node server.js",
-	 "dev": "nodemon server.js"
+     "start": "nodemon server.js"
+	 
   },
   "keywords": [],
   "author": "",
