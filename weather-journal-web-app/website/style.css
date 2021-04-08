@@ -8,7 +8,7 @@ body{
     grid-auto-rows: minmax(150px, auto);
     /* grid-template-columns:  */
     height:100vh;
-    background: #f23557;
+    background: #143bca70;
     color: #f0d43a;
     justify-content: center;
     grid-gap: 1em;
@@ -41,6 +41,10 @@ body{
 }
 
 .headline {
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
 
 }
 .title{
@@ -73,6 +77,9 @@ button{
     font-family: 'Oswald', sans-serif;
     border: none;
     box-shadow: 2px 4px 5px #444;
+    padding: 1px 6px;
+    float: right;
+    
 }
 h1{
     font-size: 36px;
@@ -83,6 +90,7 @@ textarea{
     color: #f0d43a;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
+    width: 100%;
 }
 /* Reset style for HTML element on active to have no border*/
 input:focus,
